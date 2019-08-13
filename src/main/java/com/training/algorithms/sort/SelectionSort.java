@@ -10,6 +10,9 @@ public class SelectionSort {
 
 	}
 
+	//The Selection sort algorithm is based on the idea of finding the minimum or maximum element in an unsorted array
+	// and then putting it in its correct position in a sorted array.
+
 	public static int[] selectionSortAsc(int[] num) {
 		int i, j, first, temp;
 		System.out.println(Arrays.toString(num));

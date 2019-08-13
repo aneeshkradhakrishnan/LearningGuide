@@ -6,12 +6,13 @@ public class BubbleSort {
 	
 	public static void main(String... args){
 		int[] inputArr = { 45, 23, 11, 89, 77, 98, 4, 28, 65, 43 };
-		BubbleSort bbls = new BubbleSort();
-		bbls.sort(inputArr);
+		BubbleSort.sort(inputArr);
 		System.out.println(Arrays.toString(inputArr));
 	}
-	
-	public void sort(int[] array){
+
+	//Bubble sort is based on the idea of repeatedly comparing pairs of adjacent elements and then
+	// swapping their positions if they exist in the wrong order.
+	public static void sort(int[] array){
 		int length = array.length;
 		for(int i = 0; i < length; i++){
 			boolean swapped = false;
